@@ -6,7 +6,7 @@ no warnings qw( uninitialized void once );
 package PerlX::Assert;
 
 our $AUTHORITY = 'cpan:TOBYINK';
-our $VERSION   = '0.900_00';
+our $VERSION   = '0.900_01';
 
 our $NO_KEYWORD_API;
 
@@ -118,7 +118,7 @@ fairly independent of the rest of it, and has been spun off as a
 separate release, and backported to Perl 5.8.1.
 
 Assertions that span multiple lines are very likely to cause problems
-on versions of Perl prior to 5.14. If the C<assert> keyword, the
+on versions of Perl prior to 5.12. If the C<assert> keyword, the
 entire name, and the start of the expression or block are all on the
 same line, this should be sufficient.
 
