@@ -20,15 +20,15 @@ my $meta = {
                         configure => { requires => { "ExtUtils::MakeMaker" => 6.17 } },
                         develop   => { recommends => { "Dist::Inkt" => 0.001 } },
                         runtime   => {
-                                       requires => { perl => 5.008001 },
+                                       requires => { "Exporter::Tiny" => 0, "perl" => 5.008001 },
                                        suggests => { "Devel::Declare" => 0, "Keyword::Simple" => 0.02 },
                                      },
                         test      => { requires => { "Test::Modern" => 0.007 } },
                       },
   "provides"       => {
-                        "PerlX::Assert"          => { file => "lib/PerlX/Assert.pm", version => "0.900_01" },
-                        "PerlX::Assert::DD"      => { file => "lib/PerlX/Assert/DD.pm", version => "0.900_01" },
-                        "PerlX::Assert::Keyword" => { file => "lib/PerlX/Assert/Keyword.pm", version => "0.900_01" },
+                        "PerlX::Assert"          => { file => "lib/PerlX/Assert.pm", version => "0.900_02" },
+                        "PerlX::Assert::DD"      => { file => "lib/PerlX/Assert/DD.pm", version => "0.900_02" },
+                        "PerlX::Assert::Keyword" => { file => "lib/PerlX/Assert/Keyword.pm", version => "0.900_02" },
                       },
   "release_status" => "testing",
   "resources"      => {
@@ -44,7 +44,7 @@ my $meta = {
                                         },
                         X_identifier => "http://purl.org/NET/cpan-uri/dist/PerlX-Assert/project",
                       },
-  "version"        => "0.900_01",
+  "version"        => "0.900_02",
 };
 
 my %dynamic_config;

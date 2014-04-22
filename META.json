@@ -37,6 +37,7 @@
       },
       "runtime" : {
          "requires" : {
+            "Exporter::Tiny" : "0",
             "perl" : "5.008001"
          },
          "suggests" : {
@@ -53,15 +54,15 @@
    "provides" : {
       "PerlX::Assert" : {
          "file" : "lib/PerlX/Assert.pm",
-         "version" : "0.900_01"
+         "version" : "0.900_02"
       },
       "PerlX::Assert::DD" : {
          "file" : "lib/PerlX/Assert/DD.pm",
-         "version" : "0.900_01"
+         "version" : "0.900_02"
       },
       "PerlX::Assert::Keyword" : {
          "file" : "lib/PerlX/Assert/Keyword.pm",
-         "version" : "0.900_01"
+         "version" : "0.900_02"
       }
    },
    "release_status" : "testing",
@@ -80,5 +81,5 @@
          "web" : "https://github.com/tobyink/p5-perlx-assert"
       }
    },
-   "version" : "0.900_01"
+   "version" : "0.900_02"
 }
