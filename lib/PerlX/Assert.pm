@@ -3,12 +3,13 @@ use strict;
 use warnings;
 no warnings qw( uninitialized void once );
 
+use Devel::StrictMode ();
 use Exporter::Tiny ();
 
 package PerlX::Assert;
 
 our $AUTHORITY = 'cpan:TOBYINK';
-our $VERSION   = '0.900_02';
+our $VERSION   = '0.902';
 our @ISA       = qw( Exporter::Tiny );
 our @EXPORT    = qw( assert );
 
@@ -50,12 +51,7 @@ sub _exporter_validate_opts
 		'PerlX::Assert::DD';
 	};
 	
-	$ENV{$_} && ++$globals->{check} for qw/
-		AUTHOR_TESTING
-		AUTOMATED_TESTING
-		EXTENDED_TESTING
-		RELEASE_TESTING
-	/;
+	++$globals->{check} if Devel::StrictMode::STRICT;
 }
 
 sub _exporter_install_sub

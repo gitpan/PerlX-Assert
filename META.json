@@ -1,10 +1,11 @@
 {
    "abstract" : "yet another assertion keyword",
    "author" : [
-      "Toby Inkster (TOBYINK) <tobyink@cpan.org>"
+      "Toby Inkster (TOBYINK) <tobyink@cpan.org>",
+      ""
    ],
    "dynamic_config" : 1,
-   "generated_by" : "Dist::Inkt::Profile::TOBYINK version 0.015, CPAN::Meta::Converter version 2.120921",
+   "generated_by" : "Dist::Inkt::Profile::TOBYINK version 0.016, CPAN::Meta::Converter version 2.140640",
    "keywords" : [],
    "license" : [
       "perl_5"
@@ -31,12 +32,13 @@
          }
       },
       "develop" : {
-         "recommends" : {
+         "suggests" : {
             "Dist::Inkt" : "0.001"
          }
       },
       "runtime" : {
          "requires" : {
+            "Devel::StrictMode" : "0",
             "Exporter::Tiny" : "0",
             "perl" : "5.008001"
          },
@@ -54,18 +56,18 @@
    "provides" : {
       "PerlX::Assert" : {
          "file" : "lib/PerlX/Assert.pm",
-         "version" : "0.900_02"
+         "version" : "0.902"
       },
       "PerlX::Assert::DD" : {
          "file" : "lib/PerlX/Assert/DD.pm",
-         "version" : "0.900_02"
+         "version" : "0.902"
       },
       "PerlX::Assert::Keyword" : {
          "file" : "lib/PerlX/Assert/Keyword.pm",
-         "version" : "0.900_02"
+         "version" : "0.902"
       }
    },
-   "release_status" : "testing",
+   "release_status" : "stable",
    "resources" : {
       "X_identifier" : "http://purl.org/NET/cpan-uri/dist/PerlX-Assert/project",
       "bugtracker" : {
@@ -81,5 +83,5 @@
          "web" : "https://github.com/tobyink/p5-perlx-assert"
       }
    },
-   "version" : "0.900_02"
+   "version" : "0.902"
 }

@@ -13,8 +13,8 @@
 <http://purl.org/NET/cpan-uri/dist/PerlX-Assert/project>
 	a                    doap:Project;
 	dc:contributor       <http://purl.org/NET/cpan-uri/person/tobyink>;
-	doap-deps:develop-recommendation [ doap-deps:on "Dist::Inkt 0.001"^^doap-deps:CpanId ];
-	doap-deps:runtime-requirement [ doap-deps:on "perl 5.008001"^^doap-deps:CpanId ], [ doap-deps:on "Exporter::Tiny"^^doap-deps:CpanId ];
+	doap-deps:develop-suggestion [ doap-deps:on "Dist::Inkt 0.001"^^doap-deps:CpanId ];
+	doap-deps:runtime-requirement [ doap-deps:on "perl 5.008001"^^doap-deps:CpanId ], [ doap-deps:on "Exporter::Tiny"^^doap-deps:CpanId ], [ doap-deps:on "Devel::StrictMode"^^doap-deps:CpanId ];
 	doap-deps:runtime-suggestion [
 		doap-deps:on "Keyword::Simple 0.02"^^doap-deps:CpanId;
 	], [ doap-deps:on "Devel::Declare 0"^^doap-deps:CpanId ];
@@ -28,7 +28,7 @@
 	doap:maintainer      <http://purl.org/NET/cpan-uri/person/tobyink>;
 	doap:name            "PerlX-Assert";
 	doap:programming-language "Perl";
-	doap:release         <http://purl.org/NET/cpan-uri/dist/PerlX-Assert/v_0-900_00>, <http://purl.org/NET/cpan-uri/dist/PerlX-Assert/v_0-900_01>, <http://purl.org/NET/cpan-uri/dist/PerlX-Assert/v_0-900_02>;
+	doap:release         <http://purl.org/NET/cpan-uri/dist/PerlX-Assert/v_0-900_00>, <http://purl.org/NET/cpan-uri/dist/PerlX-Assert/v_0-900_01>, <http://purl.org/NET/cpan-uri/dist/PerlX-Assert/v_0-900_02>, <http://purl.org/NET/cpan-uri/dist/PerlX-Assert/v_0-902>;
 	doap:repository      [
 		a doap:GitRepository;
 		doap:browse <https://github.com/tobyink/p5-perlx-assert>;
@@ -40,6 +40,12 @@
 	rdfs:label           "Experimental split from Moops";
 	dc:identifier        "PerlX-Assert-0.900_00"^^xsd:string;
 	dc:issued            "2014-04-21"^^xsd:date;
+	doap-changeset:changeset [
+		doap-changeset:item [
+			a doap-changeset:Change;
+			rdfs:label "Includes PerlX::Assert::DD which extends support to older versions of Perl, albeit with slightly dodgy parsing.";
+		];
+	];
 	doap-changeset:released-by <http://purl.org/NET/cpan-uri/person/tobyink>;
 	doap:file-release    <http://backpan.cpan.org/authors/id/T/TO/TOBYINK/PerlX-Assert-0.900_00.tar.gz>;
 	doap:revision        "0.900_00"^^xsd:string.
@@ -71,6 +77,21 @@
 	doap-changeset:released-by <http://purl.org/NET/cpan-uri/person/tobyink>;
 	doap:file-release    <http://backpan.cpan.org/authors/id/T/TO/TOBYINK/PerlX-Assert-0.900_02.tar.gz>;
 	doap:revision        "0.900_02"^^xsd:string.
+
+<http://purl.org/NET/cpan-uri/dist/PerlX-Assert/v_0-902>
+	a                    doap:Version;
+	rdfs:label           "First stable release";
+	dc:identifier        "PerlX-Assert-0.902"^^xsd:string;
+	dc:issued            "2014-08-13"^^xsd:date;
+	doap-changeset:changeset [
+		doap-changeset:item [
+			a doap-changeset:BackCompat;
+			rdfs:label "Refer to Devel::StrictMode for a decision on whether to arm ourself.";
+		];
+	];
+	doap-changeset:released-by <http://purl.org/NET/cpan-uri/person/tobyink>;
+	doap:file-release    <http://backpan.cpan.org/authors/id/T/TO/TOBYINK/PerlX-Assert-0.902.tar.gz>;
+	doap:revision        "0.902"^^xsd:string.
 
 <http://purl.org/NET/cpan-uri/person/tobyink>
 	a                    foaf:Person;
