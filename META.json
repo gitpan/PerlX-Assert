@@ -56,15 +56,15 @@
    "provides" : {
       "PerlX::Assert" : {
          "file" : "lib/PerlX/Assert.pm",
-         "version" : "0.902"
+         "version" : "0.903"
       },
       "PerlX::Assert::DD" : {
          "file" : "lib/PerlX/Assert/DD.pm",
-         "version" : "0.902"
+         "version" : "0.903"
       },
       "PerlX::Assert::Keyword" : {
          "file" : "lib/PerlX/Assert/Keyword.pm",
-         "version" : "0.902"
+         "version" : "0.903"
       }
    },
    "release_status" : "stable",
@@ -83,5 +83,5 @@
          "web" : "https://github.com/tobyink/p5-perlx-assert"
       }
    },
-   "version" : "0.902"
+   "version" : "0.903"
 }

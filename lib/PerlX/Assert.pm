@@ -9,7 +9,7 @@ use Exporter::Tiny ();
 package PerlX::Assert;
 
 our $AUTHORITY = 'cpan:TOBYINK';
-our $VERSION   = '0.902';
+our $VERSION   = '0.903';
 our @ISA       = qw( Exporter::Tiny );
 our @EXPORT    = qw( assert );
 
@@ -134,11 +134,11 @@ is true, assertions are checked, and if they fail, throw an exception.
 
 =item *
 
-C<AUTHOR_TESTING>
+C<PERL_STRICT>
 
 =item *
 
-C<AUTOMATED_TESTING>
+C<AUTHOR_TESTING>
 
 =item *
 
@@ -151,7 +151,9 @@ C<RELEASE_TESTING>
 =back
 
 That is, assertions will only typically be checked when the test suite
-is being run on the authors' machine, or being run by CPAN smoke testers.
+is being run on the authors' machine, or otherwise opted into.
+
+The exact decision logic can be found in L<Devel::StrictMode>.
 
 You can also force assertions to be checked using:
 

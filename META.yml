@@ -26,13 +26,13 @@ optional_features: {}
 provides:
   PerlX::Assert:
     file: lib/PerlX/Assert.pm
-    version: '0.902'
+    version: '0.903'
   PerlX::Assert::DD:
     file: lib/PerlX/Assert/DD.pm
-    version: '0.902'
+    version: '0.903'
   PerlX::Assert::Keyword:
     file: lib/PerlX/Assert/Keyword.pm
-    version: '0.902'
+    version: '0.903'
 requires:
   Devel::StrictMode: '0'
   Exporter::Tiny: '0'
@@ -43,4 +43,4 @@ resources:
   homepage: https://metacpan.org/release/PerlX-Assert
   license: http://dev.perl.org/licenses/
   repository: git://github.com/tobyink/p5-perlx-assert.git
-version: '0.902'
+version: '0.903'

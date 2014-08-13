@@ -14,16 +14,18 @@ DESCRIPTION
     However if, at compile time, any of the following environment variables is
     true, assertions are checked, and if they fail, throw an exception.
 
-    *   `AUTHOR_TESTING`
+    *   `PERL_STRICT`
 
-    *   `AUTOMATED_TESTING`
+    *   `AUTHOR_TESTING`
 
     *   `EXTENDED_TESTING`
 
     *   `RELEASE_TESTING`
 
     That is, assertions will only typically be checked when the test suite is
-    being run on the authors' machine, or being run by CPAN smoke testers.
+    being run on the authors' machine, or otherwise opted into.
+
+    The exact decision logic can be found in Devel::StrictMode.
 
     You can also force assertions to be checked using:
 

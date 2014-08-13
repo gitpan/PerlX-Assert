@@ -26,9 +26,9 @@ my $meta = {
                         test      => { requires => { "Test::Modern" => 0.007 } },
                       },
   "provides"       => {
-                        "PerlX::Assert"          => { file => "lib/PerlX/Assert.pm", version => 0.902 },
-                        "PerlX::Assert::DD"      => { file => "lib/PerlX/Assert/DD.pm", version => 0.902 },
-                        "PerlX::Assert::Keyword" => { file => "lib/PerlX/Assert/Keyword.pm", version => 0.902 },
+                        "PerlX::Assert"          => { file => "lib/PerlX/Assert.pm", version => 0.903 },
+                        "PerlX::Assert::DD"      => { file => "lib/PerlX/Assert/DD.pm", version => 0.903 },
+                        "PerlX::Assert::Keyword" => { file => "lib/PerlX/Assert/Keyword.pm", version => 0.903 },
                       },
   "release_status" => "stable",
   "resources"      => {
@@ -44,7 +44,7 @@ my $meta = {
                                         },
                         X_identifier => "http://purl.org/NET/cpan-uri/dist/PerlX-Assert/project",
                       },
-  "version"        => 0.902,
+  "version"        => 0.903,
 };
 
 my %dynamic_config;
