@@ -13,12 +13,12 @@
 <http://purl.org/NET/cpan-uri/dist/PerlX-Assert/project>
 	a                    doap:Project;
 	dc:contributor       <http://purl.org/NET/cpan-uri/person/tobyink>;
-	doap-deps:develop-suggestion [ doap-deps:on "Dist::Inkt 0.001"^^doap-deps:CpanId ];
 	doap-deps:runtime-requirement [ doap-deps:on "perl 5.008001"^^doap-deps:CpanId ], [ doap-deps:on "Exporter::Tiny"^^doap-deps:CpanId ], [ doap-deps:on "Devel::StrictMode"^^doap-deps:CpanId ];
 	doap-deps:runtime-suggestion [
 		doap-deps:on "Keyword::Simple 0.02"^^doap-deps:CpanId;
 	], [ doap-deps:on "Devel::Declare 0"^^doap-deps:CpanId ];
 	doap-deps:test-requirement [ doap-deps:on "Test::Modern 0.007"^^doap-deps:CpanId ];
+	doap-deps:test-suggestion [ doap-deps:on "Moops 0.033"^^doap-deps:CpanId ];
 	doap:bug-database    <http://rt.cpan.org/Dist/Display.html?Queue=PerlX-Assert>;
 	doap:created         "2014-04-20"^^xsd:date;
 	doap:developer       <http://purl.org/NET/cpan-uri/person/tobyink>;
@@ -28,7 +28,7 @@
 	doap:maintainer      <http://purl.org/NET/cpan-uri/person/tobyink>;
 	doap:name            "PerlX-Assert";
 	doap:programming-language "Perl";
-	doap:release         <http://purl.org/NET/cpan-uri/dist/PerlX-Assert/v_0-900_00>, <http://purl.org/NET/cpan-uri/dist/PerlX-Assert/v_0-900_01>, <http://purl.org/NET/cpan-uri/dist/PerlX-Assert/v_0-900_02>, <http://purl.org/NET/cpan-uri/dist/PerlX-Assert/v_0-902>, <http://purl.org/NET/cpan-uri/dist/PerlX-Assert/v_0-903>;
+	doap:release         <http://purl.org/NET/cpan-uri/dist/PerlX-Assert/v_0-900_00>, <http://purl.org/NET/cpan-uri/dist/PerlX-Assert/v_0-900_01>, <http://purl.org/NET/cpan-uri/dist/PerlX-Assert/v_0-900_02>, <http://purl.org/NET/cpan-uri/dist/PerlX-Assert/v_0-902>, <http://purl.org/NET/cpan-uri/dist/PerlX-Assert/v_0-903>, <http://purl.org/NET/cpan-uri/dist/PerlX-Assert/v_0-904>;
 	doap:repository      [
 		a doap:GitRepository;
 		doap:browse <https://github.com/tobyink/p5-perlx-assert>;
@@ -106,6 +106,23 @@
 	doap-changeset:released-by <http://purl.org/NET/cpan-uri/person/tobyink>;
 	doap:file-release    <http://backpan.cpan.org/authors/id/T/TO/TOBYINK/PerlX-Assert-0.903.tar.gz>;
 	doap:revision        "0.903"^^xsd:string.
+
+<http://purl.org/NET/cpan-uri/dist/PerlX-Assert/v_0-904>
+	a                    doap:Version;
+	dc:identifier        "PerlX-Assert-0.904"^^xsd:string;
+	dc:issued            "2014-10-05"^^xsd:date;
+	doap-changeset:changeset [
+		doap-changeset:item [
+			a doap-changeset:Packaging;
+			rdfs:label "Fix META.json problems by building with newer Dist::Inkt.";
+		], [
+			a doap-changeset:Packaging;
+			rdfs:label "Add 'test suggests' dep on Moops.";
+		];
+	];
+	doap-changeset:released-by <http://purl.org/NET/cpan-uri/person/tobyink>;
+	doap:file-release    <http://backpan.cpan.org/authors/id/T/TO/TOBYINK/PerlX-Assert-0.904.tar.gz>;
+	doap:revision        "0.904"^^xsd:string.
 
 <http://purl.org/NET/cpan-uri/person/tobyink>
 	a                    foaf:Person;

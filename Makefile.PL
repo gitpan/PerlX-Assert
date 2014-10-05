@@ -5,9 +5,9 @@ my $EUMM = eval( $ExtUtils::MakeMaker::VERSION );
 
 my $meta = {
   "abstract"       => "yet another assertion keyword",
-  "author"         => ["Toby Inkster (TOBYINK) <tobyink\@cpan.org>", "unknown"],
+  "author"         => ["Toby Inkster (TOBYINK) <tobyink\@cpan.org>"],
   "dynamic_config" => 1,
-  "generated_by"   => "Dist::Inkt::Profile::TOBYINK version 0.016, CPAN::Meta::Converter version 2.140640",
+  "generated_by"   => "Dist::Inkt::Profile::TOBYINK version 0.023, CPAN::Meta::Converter version 2.140640",
   "keywords"       => [],
   "license"        => ["perl_5"],
   "meta-spec"      => {
@@ -18,17 +18,19 @@ my $meta = {
   "no_index"       => { directory => ["eg", "examples", "inc", "t", "xt"] },
   "prereqs"        => {
                         configure => { requires => { "ExtUtils::MakeMaker" => 6.17 } },
-                        develop   => { suggests => { "Dist::Inkt" => 0.001 } },
-                        runtime   => {
-                                       requires => { "Devel::StrictMode" => 0, "Exporter::Tiny" => 0, "perl" => 5.008001 },
-                                       suggests => { "Devel::Declare" => 0, "Keyword::Simple" => 0.02 },
-                                     },
-                        test      => { requires => { "Test::Modern" => 0.007 } },
+                        runtime => {
+                          requires => { "Devel::StrictMode" => 0, "Exporter::Tiny" => 0, "perl" => 5.008001 },
+                          suggests => { "Devel::Declare" => 0, "Keyword::Simple" => 0.02 },
+                        },
+                        test => {
+                          requires => { "Test::Modern" => 0.007 },
+                          suggests => { Moops => 0.033 },
+                        },
                       },
   "provides"       => {
-                        "PerlX::Assert"          => { file => "lib/PerlX/Assert.pm", version => 0.903 },
-                        "PerlX::Assert::DD"      => { file => "lib/PerlX/Assert/DD.pm", version => 0.903 },
-                        "PerlX::Assert::Keyword" => { file => "lib/PerlX/Assert/Keyword.pm", version => 0.903 },
+                        "PerlX::Assert"          => { file => "lib/PerlX/Assert.pm", version => 0.904 },
+                        "PerlX::Assert::DD"      => { file => "lib/PerlX/Assert/DD.pm", version => 0.904 },
+                        "PerlX::Assert::Keyword" => { file => "lib/PerlX/Assert/Keyword.pm", version => 0.904 },
                       },
   "release_status" => "stable",
   "resources"      => {
@@ -42,9 +44,9 @@ my $meta = {
                                           url  => "git://github.com/tobyink/p5-perlx-assert.git",
                                           web  => "https://github.com/tobyink/p5-perlx-assert",
                                         },
-                        X_identifier => "http://purl.org/NET/cpan-uri/dist/PerlX-Assert/project",
+                        x_identifier => "http://purl.org/NET/cpan-uri/dist/PerlX-Assert/project",
                       },
-  "version"        => 0.903,
+  "version"        => 0.904,
 };
 
 my %dynamic_config;
